@@ -18,7 +18,7 @@ while n != guess:
     elif guess > n : 
         print("your no is greater  then random number")      
         # again new value inpput
-        guess = int(input("Enter new no again  - "))  
+        guess = int(input("Enter new no try again  - "))  
     else:
         break
 
