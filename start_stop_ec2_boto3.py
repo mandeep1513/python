@@ -22,9 +22,6 @@ def start_instance(ec2_con_re,in_id):
                     print("please wait it is going to start, once if is is started the we let you know")
                     each.wait_until_running()
                     print("now it is running")
-    return
-def Thank_you():
-    print("\n\n *********Thank you for using this script*********")
     return None
 def stop_instance(ec2_con_re,ub_id):
     pr_st=get_instant_state(ec2_con_re,in_id)
@@ -34,4 +31,8 @@ def stop_instance(ec2_con_re,ub_id):
             for each in ec2_con_re.instances.filter(Filters=[{'Name':'instance-id','values':[in_id]}]):
                     each.stop()
                     print("instances stoped")
+    return
+def Thank_you():
+    print("\n\n *********Thank you for using this script*********")
+    return None                    
 print(" code run successfully ")                                    	
