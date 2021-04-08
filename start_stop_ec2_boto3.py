@@ -33,6 +33,6 @@ def stop_instance(ec2_con_re,ub_id):
                     print("instances stoped")
     return
 def Thank_you():
-    print("\n\n *********Thank you for using this script*********")
+    print("\n\n *Thank you for using this script*")
     return None                    
-print(" code run successfully ")                                    	
+#print(" code run successfully ")                                    	
